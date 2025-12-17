@@ -1,0 +1,13 @@
+[[language]]
+name = "python"
+language-servers = ["ty", "ruff"]
+auto-format = true
+formatter = { command = "uvx", args = ["ruff", "format"] }
+
+[language-server.ty]
+command = "uvx"
+args = ["ty", "server"]
+
+[language-server.ruff]
+command = "uvx"
+args = ["ruff", "server"]
