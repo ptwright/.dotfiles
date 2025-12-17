@@ -165,6 +165,9 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 symbol = ""
 style = "bg:teal"
 format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+python_binary = [".venv/bin/python", ".venv/bin/python3", "python3", "python"]
+detect_files = ["pyproject.toml", "requirements.txt", ".python-version"]
+detect_folders = [".venv"]
 
 [docker_context]
 symbol = ""
