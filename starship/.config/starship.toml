@@ -9,7 +9,7 @@ $directory\
 [](fg:peach bg:green)\
 $git_branch\
 $git_status\
-[](fg:green bg:blue)\
+[](fg:green bg:teal)\
 $c\
 $rust\
 $golang\
@@ -20,7 +20,7 @@ $kotlin\
 $haskell\
 $python\
 $ocaml\
-[](fg:blue bg:purple)\
+[](fg:teal bg:purple)\
 $time\
 [ ](fg:purple)\
 $line_break$character"""
@@ -167,6 +167,13 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 python_binary = [".venv/bin/python", ".venv/bin/python3", "python3", "python"]
 detect_files = ["pyproject.toml", "requirements.txt", ".python-version"]
 detect_folders = [".venv"]
+
+[ocaml]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+detect_files = ["dune-project", "dune", ".ocamlformat", ".opam"]
+detect_folders = ["_opam"]
 
 [docker_context]
 symbol = ""
