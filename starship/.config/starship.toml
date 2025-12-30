@@ -4,12 +4,12 @@ format = """
 [](surface0)\
 $os\
 $username\
-[](bg:peach fg:surface0)\
+[](bg:lavender fg:surface0)\
 $directory\
-[](fg:peach bg:green)\
+[](fg:lavender bg:green)\
 $git_branch\
 $git_status\
-[](fg:green bg:teal)\
+[](fg:green bg:blue)\
 $c\
 $rust\
 $golang\
@@ -20,7 +20,7 @@ $kotlin\
 $haskell\
 $python\
 $ocaml\
-[](fg:teal bg:purple)\
+[](fg:blue bg:purple)\
 $time\
 [ ](fg:purple)\
 $line_break$character"""
@@ -99,7 +99,7 @@ style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:peach"
+style = "fg:mantle bg:lavender"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -162,16 +162,16 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [python]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
 python_binary = [".venv/bin/python", ".venv/bin/python3", "python3", "python"]
 detect_files = ["pyproject.toml", "requirements.txt", ".python-version"]
 detect_folders = [".venv"]
 
 [ocaml]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+style = "bg:blue"
+format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
 detect_files = ["dune-project", "dune", ".ocamlformat", ".opam"]
 detect_folders = ["_opam"]
 
