@@ -3,3 +3,4 @@
 -- Add any additional options here
 --
 vim.lsp.inlay_hint.enable(true)
+vim.g.autoformat = true

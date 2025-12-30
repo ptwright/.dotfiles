@@ -4,12 +4,12 @@ format = """
 [](surface0)\
 $os\
 $username\
-[](bg:lavender fg:surface0)\
+[](bg:green fg:surface0)\
 $directory\
-[](fg:lavender bg:green)\
+[](fg:green bg:lavender)\
 $git_branch\
 $git_status\
-[](fg:green bg:blue)\
+[](fg:lavender bg:blue)\
 $c\
 $rust\
 $golang\
@@ -99,7 +99,7 @@ style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:lavender"
+style = "fg:mantle bg:green"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -113,12 +113,12 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
+style = "bg:lavender"
+format = '[[ $symbol $branch ](fg:base bg:lavender)]($style)'
 
 [git_status]
-style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
+style = "bg:lavender"
+format = '[[($all_status$ahead_behind )](fg:base bg:lavender)]($style)'
 
 [nodejs]
 symbol = ""
