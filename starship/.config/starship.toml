@@ -4,12 +4,12 @@ format = """
 [](surface0)\
 $os\
 $username\
-[](bg:green fg:surface0)\
+[](bg:blue fg:surface0)\
 $directory\
-[](fg:green bg:lavender)\
+[](fg:blue bg:green)\
 $git_branch\
 $git_status\
-[](fg:lavender bg:blue)\
+[](fg:green bg:lavender)\
 $c\
 $rust\
 $golang\
@@ -20,9 +20,9 @@ $kotlin\
 $haskell\
 $python\
 $ocaml\
-[](fg:blue bg:purple)\
+[](fg:lavender bg:rosewater)\
 $time\
-[ ](fg:purple)\
+[ ](fg:rosewater)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -91,6 +91,7 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+Pop = "🍭"
 
 [username]
 show_always = true
@@ -99,7 +100,7 @@ style_root = "bg:surface0 fg:text"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:green"
+style = "fg:mantle bg:blue"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -113,12 +114,12 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:lavender"
-format = '[[ $symbol $branch ](fg:base bg:lavender)]($style)'
+style = "bg:green"
+format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
 
 [git_status]
-style = "bg:lavender"
-format = '[[($all_status$ahead_behind )](fg:base bg:lavender)]($style)'
+style = "bg:green"
+format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
 
 [nodejs]
 symbol = ""
@@ -162,16 +163,16 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [python]
 symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
+style = "bg:lavender"
+format = '[[ $symbol( $version) ](fg:base bg:lavender)]($style)'
 python_binary = [".venv/bin/python", ".venv/bin/python3", "python3", "python"]
 detect_files = ["pyproject.toml", "requirements.txt", ".python-version"]
 detect_folders = [".venv"]
 
 [ocaml]
 symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
+style = "bg:lavender"
+format = '[[ $symbol( $version) ](fg:base bg:lavender)]($style)'
 detect_files = ["dune-project", "dune", ".ocamlformat", ".opam"]
 detect_folders = ["_opam"]
 
@@ -183,8 +184,8 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
+style = "bg:rosewater"
+format = '[[  $time ](fg:mantle bg:rosewater)]($style)'
 
 [line_break]
 disabled = false
