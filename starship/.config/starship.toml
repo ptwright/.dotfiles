@@ -9,7 +9,7 @@ $directory\
 [](fg:blue bg:green)\
 $git_branch\
 $git_status\
-[](fg:green bg:lavender)\
+[](fg:green bg:peach)\
 $c\
 $rust\
 $golang\
@@ -20,9 +20,8 @@ $kotlin\
 $haskell\
 $python\
 $ocaml\
-[](fg:lavender bg:rosewater)\
+[ ](fg:peach)\
 $time\
-[ ](fg:rosewater)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -91,7 +90,8 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
-Pop = "🍭"
+Pop = ""
+Void = "🍭"
 
 [username]
 show_always = true
@@ -163,16 +163,16 @@ format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [python]
 symbol = ""
-style = "bg:lavender"
-format = '[[ $symbol( $version) ](fg:base bg:lavender)]($style)'
+style = "bg:peach"
+format = '[[ $symbol( $version) ](fg:base bg:peach)]($style)'
 python_binary = [".venv/bin/python", ".venv/bin/python3", "python3", "python"]
 detect_files = ["pyproject.toml", "requirements.txt", ".python-version"]
 detect_folders = [".venv"]
 
 [ocaml]
 symbol = ""
-style = "bg:lavender"
-format = '[[ $symbol( $version) ](fg:base bg:lavender)]($style)'
+style = "bg:peach"
+format = '[[ $symbol( $version) ](fg:base bg:peach)]($style)'
 detect_files = ["dune-project", "dune", ".ocamlformat", ".opam"]
 detect_folders = ["_opam"]
 
@@ -184,8 +184,8 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:rosewater"
-format = '[[  $time ](fg:mantle bg:rosewater)]($style)'
+style = "fg:blue"
+format = '[  $time ]($style)'
 
 [line_break]
 disabled = false
