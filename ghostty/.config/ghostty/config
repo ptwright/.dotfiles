@@ -7,4 +7,5 @@ font-feature = calt
 font-feature = liga
 font-feature = dlig
 
-window-decoration = true
+window-decoration = server
+gtk-titlebar = false

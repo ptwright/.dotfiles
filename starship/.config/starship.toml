@@ -85,7 +85,7 @@ Alpine = ""
 Amazon = ""
 Android = ""
 Arch = "󰣇"
-Artix = "󰣇"
+CachyOS = "󰣇"
 CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
@@ -124,7 +124,7 @@ format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
 [nodejs]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $versionu ](fg:base bg:teal)]($style)'
 
 [c]
 symbol = " "
@@ -132,9 +132,9 @@ style = "bg:teal"
 format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [rust]
+style = "bg:peach"
+format = '[[ $symbol( $version) ](fg:base bg:peach)]($style)'
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
 [golang]
 symbol = ""
