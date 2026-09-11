@@ -52,9 +52,9 @@ o.window("com.mitchellh.ghostty", { opacity = "0.94 override 0.94 override" })
 -- })
 
 -- https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/
--- hl.config({
---   scrolling = {
---     -- See only one column per screen instead of two.
---     column_width = 0.97,
---   },
--- })
+hl.config({
+  scrolling = {
+    -- Let two columns fill the screen without extra side space.
+    column_width = 0.5,
+  },
+})

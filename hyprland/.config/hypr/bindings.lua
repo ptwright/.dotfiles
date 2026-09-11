@@ -23,10 +23,9 @@
 -- Disable a default binding without replacing it.
 -- hl.unbind("SUPER + SHIFT + B")
 
--- Pass these keys through to Herdr for tab navigation.
--- SUPER+J was "Toggle window split"; SUPER+K was "Keybindings".
-hl.unbind("SUPER + J")
-hl.unbind("SUPER + K")
+-- Pass this key through to Herdr for tab navigation.
+-- SUPER+L was "Toggle workspace layout"; SUPER+H was already unbound.
+hl.unbind("SUPER + L")
 
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
